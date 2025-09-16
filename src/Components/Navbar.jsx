@@ -26,8 +26,11 @@ export default function Navbar() {
 
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
-          <a href="#" className="hover:text-yellow-400">
-            Galleries
+          <a href="/" className="hover:text-yellow-400">
+          
+          </a>
+          <a href="/galliries" className="hover:text-yellow-400">
+            Galliries
           </a>
           <a href="#" className="hover:text-yellow-400">
             Documentaries

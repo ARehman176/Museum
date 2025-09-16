@@ -1,7 +1,7 @@
 import React from 'react'
 import image1 from '../assets/image1.png'
 import { Icon } from "@iconify/react";
-const Home = () => {
+const Hero = () => {
   return (
     <section
       className="relative h-screen bg-cover bg-center"
@@ -36,4 +36,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero

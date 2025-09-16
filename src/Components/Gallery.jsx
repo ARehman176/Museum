@@ -131,7 +131,7 @@ const Gallery = () => {
                 .map((slide) => (
                   <div
                     key={slide.id}
-                    className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+                    className="bg-[#23262D] rounded-lg shadow-lg overflow-hidden"
                   >
                     <img
                       src={slide.image}
