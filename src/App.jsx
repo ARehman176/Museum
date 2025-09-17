@@ -11,7 +11,11 @@ import Footer from './Components/Footer'
 import Hero from './Components/Hero';
 import Home from './Pages/Home'
 import Galliries from './Pages/Galliries';
-
+import Documentaries from './Pages/Documentaries'
+import Content from './Pages/Content';
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
+import Forget from './Pages/Forget';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +25,11 @@ function App() {
   <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/Galliries' element={<Galliries />} />
+       <Route path='/Documentaries' element={<Documentaries />} />
+        <Route path='/Content' element={<Content />} />
+         <Route path='/Signup' element={<Signup />} />
+          <Route path='/Login' element={<Login />} />
+                  <Route path='/forget' element={<Forget />} />
   </Routes>
   </BrowserRouter>
     

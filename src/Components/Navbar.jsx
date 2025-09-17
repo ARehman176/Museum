@@ -32,7 +32,7 @@ export default function Navbar() {
           <a href="/galliries" className="hover:text-yellow-400">
             Galliries
           </a>
-          <a href="#" className="hover:text-yellow-400">
+          <a href="/Documentaries" className="hover:text-yellow-400">
             Documentaries
           </a>
           <a href="#" className="hover:text-yellow-400">

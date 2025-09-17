@@ -43,13 +43,17 @@ const Footer = () => {
               Sign up
             </button>
           </div>
-          <div className="ml-85 mt-4 text-sm text-white hover:underline flex items-center cursor-pointer ">
-            Back to the top{" "}
-            <Icon
-              icon="material-symbols:arrow-outward"
-              className="ml-1 text-sm"
-            />
-          </div>
+         <div
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+  className="ml-85 mt-4 text-sm text-white hover:underline flex items-center cursor-pointer"
+>
+  Back to the top{" "}
+  <Icon
+    icon="material-symbols:arrow-outward"
+    className="ml-1 text-sm"
+  />
+</div>
+
         </div>
       </div>
 
