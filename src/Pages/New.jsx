@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { FiSearch, FiUpload } from "react-icons/fi";
-import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
-const Forget = () => {
+import Footer from "../Components/Footer";
+const New = () => {
   return (
     <div>
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
@@ -48,28 +48,36 @@ const Forget = () => {
           </div>
         </div>
       </nav>
-
       <div className="min-h-screen bg-[#121418] text-white px-6 py-10 flex flex-col lg:flex-row justify-center">
         <div className="w-full lg:w-2/4 ">
           <h1 className="text-white text-4xl font-semibold -ml-40 mt-10">
-            Forgot Password
+            Create New password
           </h1>
-          <p className="text-xl mt-20 -ml-40 text-[#CACACA]">Forgot Password</p>
+          <p className="text-xl mt-20 -ml-40 text-[#CACACA]">Reset Password</p>
           <hr className="w-md mt-5 -ml-40 text-[#454545]" />
-          <p className="text-[#929292] mt-10 -ml-40">
-            Enter the email address you used when you joined and well <br />
-            send you link to reset your password.
-          </p>
+
           <div className="-ml-40 ">
             <label className="block mb-1 text-sm mt-10">
-              Email <span className="text-red-500 ">*</span>
+              Password <span className="text-red-500 ">*</span>
             </label>
             <input
               type="text"
               className="w-md mt-2 px-3 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white"
             />
           </div>
-          <Link to="/New" className="bg-white text-black py-1 px-2 mt- ml-52">
+          <div className="-ml-40 ">
+            <label className="block mb-1 text-sm mt-10">
+              Confirm Password <span className="text-red-500 ">*</span>
+            </label>
+            <input
+              type="text"
+              className="w-md mt-2 px-3 py-2 bg-[#1e1e1e] border border-gray-700 rounded text-white"
+            />
+          </div>
+          <Link
+            to="/Profile"
+            className="bg-white text-black py-1 px-2 mt- ml-52"
+          >
             <button className=" mt-10">Continue</button>
           </Link>
         </div>
@@ -79,4 +87,4 @@ const Forget = () => {
   );
 };
 
-export default Forget;
+export default New;
