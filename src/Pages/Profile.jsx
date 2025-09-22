@@ -61,9 +61,12 @@ const Profile = () => {
                 Password
               </div>
             </Link>
-            <div className="text-gray-400 hover:text-white cursor-pointer mt-7">
+            <Link to="/Curator">
+             <div className="text-gray-400 hover:text-white cursor-pointer mt-7">
               Curator
             </div>
+            </Link>
+           
           </nav>
         </aside>
 

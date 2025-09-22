@@ -9,10 +9,13 @@ export default function Navbar() {
         <button className="flex items-center gap-1 hover:text-yellow-400">
           <FiSearch className="text-base sm:text-lg" /> Search
         </button>
-        <button className="flex items-center gap-1 hover:text-yellow-400">
-          <FiUpload className="text-base sm:text-lg" /> Submit Content
-        </button>
-        <a href="#" className="hover:text-yellow-400">
+       <a href="/Contentsubmission">
+  <button className="flex items-center gap-1 hover:text-yellow-400">
+    <FiUpload className="text-base sm:text-lg" /> Submit Content
+  </button>
+</a>
+
+        <a href="/Dashboard" className="hover:text-yellow-400">
           Donate
         </a>
       </div>
@@ -35,15 +38,16 @@ export default function Navbar() {
           <a href="/Documentaries" className="hover:text-yellow-400">
             Documentaries
           </a>
-          <a href="#" className="hover:text-yellow-400">
+          <a href="/Membership" className="hover:text-yellow-400">
             Membership
           </a>
-          <a href="#" className="hover:text-yellow-400">
-            Blog
+          <a href="/Supportus" className="hover:text-yellow-400">
+            Support us
           </a>
           <button className="bg-gradient-to-r from-gray-200 to-gray-400 text-black px-3 sm:px-4 py-2 rounded font-bold -mt-1">
             🖤 DONATE NOW
           </button>
+          
         </div>
       </div>
     </nav>

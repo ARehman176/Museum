@@ -29,6 +29,12 @@ import Reset from "./Pages/Reset";
 import Change from "./Pages/Change";
 import Account from "./Pages/Account";
 import Curator from "./Pages/Curator";
+import Contentsubmission from "./Pages/Contentsubmission";
+import Submission from "./Pages/Submission";
+import Finalsubmission from "./Pages/Finalsubmission";
+import Supportus from "./Pages/Supportus";
+import Membership from "./Pages/Membership";
+import Dashboard from "./Pages/Dashboard";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -48,8 +54,14 @@ function App() {
           <Route path="/Password" element={<Password />} />
           <Route path="/Reset" element={<Reset />} />
           <Route path="/Change" element={<Change />} />
-            <Route path="/Account" element={<Account />} />
-            <Route path="/Curator" element={<Curator />} />
+          <Route path="/Account" element={<Account />} />
+          <Route path="/Curator" element={<Curator />} />
+          <Route path="/Contentsubmission" element={<Contentsubmission />} />
+          <Route path="/submission" element={<Submission />} />
+          <Route path="/Finalsubmission" element={<Finalsubmission />} />
+          <Route path="/Supportus" element={<Supportus />} />
+          <Route path="/Membership" element={<Membership />} />
+           <Route path="/Dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </>
