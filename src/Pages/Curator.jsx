@@ -50,7 +50,7 @@ const Curator = () => {
     },
   ];
   const getStatusStyle = (status) => {
-    const baseStyle = "text-white px-3 py-1 rounded w-24 text-center"; // fixed width
+    const baseStyle = "text-white px-3 py-1 rounded w-24 text-center";
 
     switch (status) {
       case "Accept":
@@ -80,14 +80,11 @@ const Curator = () => {
           </a>
         </div>
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-4 sm:gap-0 mb-2">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="w-16 sm:w-20" />
           </div>
 
-          {/* Links */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
             <a href="/" className="hover:text-yellow-400">
               Home
@@ -112,7 +109,6 @@ const Curator = () => {
       </nav>
 
       <div className="min-h-screen bg-[#121418] text-white flex">
-        {/* Sidebar */}
         <aside className="w-64 bg-[#121418] p-6 ml-60 mt-4">
           <nav className="space-y-6">
             <Link to="/Profile">
@@ -131,7 +127,6 @@ const Curator = () => {
           </nav>
         </aside>
 
-        {/* Main Content */}
         <div className="w-4xl p-8">
           <h1 className="text-2xl font-bold mb-6">Curator Section</h1>
 
@@ -172,7 +167,6 @@ const Curator = () => {
             </table>
           </div>
 
-          {/* Save Button */}
           <div className="mt-6 flex justify-end">
             <button className="bg-white text-black font-semibold px-6 py-2 rounded hover:bg-gray-200">
               Save Changes

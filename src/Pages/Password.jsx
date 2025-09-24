@@ -8,7 +8,6 @@ const Password = () => {
   return (
     <div>
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
-        {/* Top Right Menu */}
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3 ">
           <button className="flex items-center gap-1 hover:text-yellow-400">
             <FiSearch className="text-base sm:text-lg" /> Search
@@ -21,14 +20,11 @@ const Password = () => {
           </a>
         </div>
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-4 sm:gap-0 mb-2">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="w-16 sm:w-20" />
           </div>
 
-          {/* Links */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
             <a href="/" className="hover:text-yellow-400"></a>
             <a href="/galliries" className="hover:text-yellow-400">
@@ -76,7 +72,6 @@ const Password = () => {
             <hr className="w-sm text-[#454545]  " />
           </div>
           <div className="">
-            {/* Password Field */}
             <div className="flex flex-col max-w-sm mb-10 ml-40">
               <label className="mb-1 text-gray-300 font-medium">
                 Password <span className="text-red-500">*</span>
@@ -95,7 +90,6 @@ const Password = () => {
               </div>
             </div>
 
-            {/* Save Button */}
             <Link to="/Reset">
               <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded hover:bg-gray-400 ml-100">
                 Save Changes

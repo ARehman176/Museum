@@ -71,7 +71,6 @@ const Account = () => {
           </nav>
         </aside>
 
-        {/* Content */}
         <div>
           <h1 className="text-3xl font-bold mb-6 ml-20 mt-16">My Account</h1>
 
@@ -106,7 +105,6 @@ const Account = () => {
             </div>
           </div>
 
-          {/* Save Button */}
           <Link to="/Account">
             <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded hover:bg-gray-400 ml-65 mt-8">
               Save Changes

@@ -8,7 +8,6 @@ const Profile = () => {
   return (
     <div>
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
-        {/* Top Right Menu */}
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3 ">
           <button className="flex items-center gap-1 hover:text-yellow-400">
             <FiSearch className="text-base sm:text-lg" /> Search
@@ -21,14 +20,11 @@ const Profile = () => {
           </a>
         </div>
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-4 sm:gap-0 mb-2">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="w-16 sm:w-20" />
           </div>
 
-          {/* Links */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
             <a href="/" className="hover:text-yellow-400"></a>
             <a href="/galliries" className="hover:text-yellow-400">
@@ -50,7 +46,6 @@ const Profile = () => {
         </div>
       </nav>
       <div className="min-h-screen bg-[#121418] text-white flex">
-        {/* Sidebar */}
         <aside className="w-1/ bg-[#121418] p-6 ml-60 mt-10">
           <nav className="space-y-6">
             <div className="text-lg font-semibold text-white border-l-4 border-white pl-3">
@@ -62,35 +57,31 @@ const Profile = () => {
               </div>
             </Link>
             <Link to="/Curator">
-             <div className="text-gray-400 hover:text-white cursor-pointer mt-7">
-              Curator
-            </div>
+              <div className="text-gray-400 hover:text-white cursor-pointer mt-7">
+                Curator
+              </div>
             </Link>
-           
           </nav>
         </aside>
 
-        {/* Main Content */}
         <main className="flex-1 p-10">
           <h1 className="text-3xl font-bold mb-6 ml-40 mt-5">My Account</h1>
 
-          {/* Profile Picture */}
           <div className="mb-10 ml-40 ">
             <h2 className="text-xl font-semibold mb-5  ">Profile Picture</h2>
             <hr className="w-40 text-[#454545]  " />
             <img
-              src={placeholder} // Replace this with the actual image path
+              src={placeholder}
               alt="Profile"
               className="w-28 h-28 rounded-full mt-5"
             />
           </div>
 
-          {/* Personal Info Form */}
           <div className="space-y-6 flex">
             <div className="flex flex-col space-y-6 ml-130 -mt-55">
               <h2 className="text-xl font-semibold">Personal Information</h2>
               <hr className="text-[#454545] -mt-1" />
-              {/* First Name */}
+
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">First Name</label>
                 <div className="relative">
@@ -105,7 +96,6 @@ const Profile = () => {
                 </div>
               </div>
 
-              {/* Last Name */}
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">Last Name</label>
                 <div className="relative">
@@ -120,7 +110,6 @@ const Profile = () => {
                 </div>
               </div>
 
-              {/* Email */}
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">Email</label>
                 <input
@@ -130,7 +119,6 @@ const Profile = () => {
                 />
               </div>
 
-              {/* Phone Number */}
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">Phone No.</label>
                 <input
@@ -139,7 +127,6 @@ const Profile = () => {
                 />
               </div>
 
-              {/* Entity Name (Optional) */}
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">
                   Entity Name{" "}
@@ -151,7 +138,6 @@ const Profile = () => {
                 />
               </div>
 
-              {/* Zip Code */}
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">Zip code</label>
                 <input
@@ -160,7 +146,6 @@ const Profile = () => {
                 />
               </div>
 
-              {/* Country */}
               <div className="flex flex-col w-sm">
                 <label className="mb-1 text-gray-400">Country</label>
                 <select className="bg-[#191B20] text-white px-3 py-2 rounded-md focus:outline-none">
@@ -172,8 +157,6 @@ const Profile = () => {
                 </select>
               </div>
             </div>
-
-            {/* Save Button */}
 
             <div className="mt-138 -ml-37 ">
               <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded hover:bg-gray-400 cursor-pointer">

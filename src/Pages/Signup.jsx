@@ -8,7 +8,6 @@ const Signup = () => {
   return (
     <div className="bg-black">
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
-        {/* Top Right Menu */}
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3 ">
           <button className="flex items-center gap-1 hover:text-yellow-400">
             <FiSearch className="text-base sm:text-lg" /> Search
@@ -21,14 +20,11 @@ const Signup = () => {
           </a>
         </div>
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-4 sm:gap-0 mb-2">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="w-16 sm:w-20" />
           </div>
 
-          {/* Links */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
             <a href="/" className="hover:text-yellow-400"></a>
             <a href="/galliries" className="hover:text-yellow-400">
@@ -56,7 +52,6 @@ const Signup = () => {
             Create New User Account
           </h2>
 
-          {/* Personal Information */}
           <div className="mb-6 pb-6">
             <h3 className="text-lg font-medium mb-4">Personal Information</h3>
             <hr className="border-gray-700  max-w-xl  " />
@@ -82,7 +77,6 @@ const Signup = () => {
             </div>
           </div>
 
-          {/* Sign-in Information */}
           <div className="mb-6  border-gray-600 pb-6">
             <h3 className="text-lg font-medium mb-4">Sign-in Information</h3>
             <hr className="border-gray-700  max-w-xl  " />
@@ -117,7 +111,6 @@ const Signup = () => {
             </div>
           </div>
 
-          {/* Membership Registration */}
           <div className="mb-6">
             <h3 className="text-lg font-medium mb-4">
               Membership Registration
@@ -133,19 +126,16 @@ const Signup = () => {
             </select>
           </div>
 
-          {/* Required Fields Note */}
           <p className="text-sm text-red-400 mb-6">* Required Fields</p>
 
-          {/* Submit Button */}
-         <Link
-  to="/Login"
-  className="inline-block bg-white text-black px-6 py-2 rounded hover:bg-gray-200 transition hover:text-yellow-500"
->
-  Create an Account
-</Link>
+          <Link
+            to="/Login"
+            className="inline-block bg-white text-black px-6 py-2 rounded hover:bg-gray-200 transition hover:text-yellow-500"
+          >
+            Create an Account
+          </Link>
         </div>
 
-        {/* Social Sign-up Section */}
         <div className="w-full lg:w-1/3 mt-10 lg:mt-0">
           <h3 className="text-lg font-medium mb-2 mt-16">Social Sign up</h3>
           <hr className="border-gray-700  max-w-xl  " />

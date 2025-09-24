@@ -6,43 +6,42 @@ import { Icon } from "@iconify/react";
 import content from "../assets/content.png";
 import image6 from "../assets/image6.png";
 import bg from "../assets/bg.png";
-import gallery1 from '../assets/gallery1.png';
-import gallery2 from '../assets/gallery2.png';
-import gallery3 from '../assets/gallery3.png';
-import gallery4 from '../assets/gallery4.png';
+import gallery1 from "../assets/gallery1.png";
+import gallery2 from "../assets/gallery2.png";
+import gallery3 from "../assets/gallery3.png";
+import gallery4 from "../assets/gallery4.png";
 import Footer from "../Components/Footer";
 
 const Content = () => {
-    const galleryItems = [
-      {
-        image: gallery1,
-        title: 'Excepteur sint occan',
-        description:
-          'Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.',
-      },
-      {
-        image: gallery2,
-        title: 'Nemo enim ipsame',
-        description:
-          'Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.',
-      },
-      {
-        image: gallery3,
-        title: 'Quis autem vel eum',
-        description:
-          'Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.',
-      },
-      {
-        image: gallery4,
-        title: 'Aspernatur aut oditut',
-        description:
-          'Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.',
-      },
-    ]
+  const galleryItems = [
+    {
+      image: gallery1,
+      title: "Excepteur sint occan",
+      description:
+        "Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.",
+    },
+    {
+      image: gallery2,
+      title: "Nemo enim ipsame",
+      description:
+        "Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.",
+    },
+    {
+      image: gallery3,
+      title: "Quis autem vel eum",
+      description:
+        "Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.",
+    },
+    {
+      image: gallery4,
+      title: "Aspernatur aut oditut",
+      description:
+        "Duis aute irure reprehenderit voluptate velit esse cillum euea fugiat pariatur Excepteur sint occaecat cupidatatam.",
+    },
+  ];
   return (
     <div className="bg-black">
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
-        {/* Top Right Menu */}
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3 ">
           <button className="flex items-center gap-1 hover:text-yellow-400">
             <FiSearch className="text-base sm:text-lg" /> Search
@@ -55,14 +54,11 @@ const Content = () => {
           </a>
         </div>
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-4 sm:gap-0 mb-2">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="w-16 sm:w-20" />
           </div>
 
-          {/* Links */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
             <a href="/" className="hover:text-yellow-400"></a>
             <a href="/galliries" className="hover:text-yellow-400">
@@ -87,10 +83,8 @@ const Content = () => {
         className="relative h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${image1})` }}
       >
-        {/* Overlay for better text visibility (optional) */}
         <div className="absolute inset-0 bg-black/30"></div>
 
-        {/* Content Box */}
         <div className="relative z-10 flex items-center h-full px-6 md:px-20 ml-50  ">
           <div className="bg-black p-6 md:p-8 max-w-sm  mt-70">
             <button className="text-white border-1 p-2">Gallery Name</button>
@@ -103,7 +97,6 @@ const Content = () => {
       </section>
       <div className="mt-10 mb-10 ml-45">
         <a href="/" className="flex items-center text-white  space-x-1">
-          
           <span className="hover:text-gray-400 hover:underline">Home</span>
           <Icon
             icon="ri:arrow-left-s-line"
@@ -120,8 +113,6 @@ const Content = () => {
       <hr className="border-gray-700  max-w-6xl ml-46  " />
       <div className=" text-white py-12 px-6 md:px-16">
         <div className="flex flex-col md:flex-row justify-between gap-12">
-          {/* Left Section */}
-
           <div className="md:w-2/4  ml-30">
             <h2 className="text-3xl font-semibold">
               Explore the fascinating history.
@@ -129,7 +120,6 @@ const Content = () => {
             <img src={content} alt="" className="w-160 mt-10" />
           </div>
 
-          {/* Right Section */}
           <div className="md:w-1/4 mr-30 mt-25">
             <h3 className="text-xl font-semibold border-b border-gray-600   pb-2 mb-4">
               Creator Info
@@ -160,8 +150,6 @@ const Content = () => {
 
       <div className=" text-white py-5 px-6 md:px-16">
         <div className="flex flex-col md:flex-row justify-between gap-12">
-          {/* Left Section */}
-
           <div className="md:w-2/4  ml-30">
             <h2 className="text-3xl font-semibold leading-snug">
               Spanning over 700 Years, Room 41 traces the <br />
@@ -191,7 +179,6 @@ const Content = () => {
             </p>
           </div>
 
-          {/* Right Section */}
           <div className="md:w-1/4 mr-30 mt-30">
             <img src={image6} alt="" />
           </div>
@@ -223,29 +210,33 @@ const Content = () => {
           </div>
         </div>
       </div>
-        <div className="ml-29 text-white py-12 px-6 md:px-16 max-w-7xl">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-8">You may also be intersted in</h2>
+      <div className="ml-29 text-white py-12 px-6 md:px-16 max-w-7xl">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8">
+          You may also be intersted in
+        </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {galleryItems.map((item, index) => (
-          <div key={index} className="bg-[#23262D]  overflow-hidden shadow-lg">
-            <div className="relative">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-52 object-cover"
-              />
-             
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {galleryItems.map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#23262D]  overflow-hidden shadow-lg"
+            >
+              <div className="relative">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-52 object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-300">{item.description}</p>
+              </div>
             </div>
-            <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-300">{item.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </div>
   );
 };

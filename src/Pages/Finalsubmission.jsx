@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FiSearch, FiUpload, FiUploadCloud } from "react-icons/fi";
 import logo from "../assets/logo.png";
 
@@ -25,12 +25,10 @@ const Finalsubmission = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data:", formData);
-    // You can send formData to your backend here
   };
 
   return (
     <div>
-      {/* Navigation */}
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3">
           <button className="flex items-center gap-1 hover:text-yellow-400">
@@ -50,17 +48,28 @@ const Finalsubmission = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
-            <a href="/" className="hover:text-yellow-400">Home</a>
-            <a href="/galleries" className="hover:text-yellow-400">Galleries</a>
-            <a href="/documentaries" className="hover:text-yellow-400">Documentaries</a>
-            <a href="#" className="hover:text-yellow-400">Membership</a>
-            <a href="#" className="hover:text-yellow-400">Blog</a>
-            <a href="#" className="hover:text-yellow-400">Support us</a>
+            <a href="/" className="hover:text-yellow-400">
+              Home
+            </a>
+            <a href="/galleries" className="hover:text-yellow-400">
+              Galleries
+            </a>
+            <a href="/documentaries" className="hover:text-yellow-400">
+              Documentaries
+            </a>
+            <a href="#" className="hover:text-yellow-400">
+              Membership
+            </a>
+            <a href="#" className="hover:text-yellow-400">
+              Blog
+            </a>
+            <a href="#" className="hover:text-yellow-400">
+              Support us
+            </a>
           </div>
         </div>
       </nav>
 
-      {/* Content Submission Form */}
       <div className="min-h-screen bg-[#121418] text-white p-6 flex items-center justify-center ">
         <form
           onSubmit={handleSubmit}
@@ -69,14 +78,15 @@ const Finalsubmission = () => {
           <h2 className="text-2xl font-semibold mb-6">Content Submission</h2>
 
           <div className="flex flex-col md:flex-row md:space-x-8">
-            {/* Left Column */}
             <div className="flex-1 mb-8 md:mb-0">
               <h3 className="text-lg font-medium mb-4">Content Information</h3>
               <hr className="mb-4 border-gray-600" />
 
               <div className="space-y-4">
                 <div>
-                  <label htmlFor="title" className="block text-sm mb-3">Title</label>
+                  <label htmlFor="title" className="block text-sm mb-3">
+                    Title
+                  </label>
                   <input
                     type="text"
                     id="title"
@@ -88,7 +98,9 @@ const Finalsubmission = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subtitle" className="block text-sm mb-1">Subtitle</label>
+                  <label htmlFor="subtitle" className="block text-sm mb-1">
+                    Subtitle
+                  </label>
                   <input
                     type="text"
                     id="subtitle"
@@ -100,7 +112,9 @@ const Finalsubmission = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="description" className="block text-sm mb-1">Description of Content</label>
+                  <label htmlFor="description" className="block text-sm mb-1">
+                    Description of Content
+                  </label>
                   <textarea
                     id="description"
                     name="description"
@@ -112,7 +126,9 @@ const Finalsubmission = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="gallery" className="block text-sm mb-1">Gallery Name</label>
+                  <label htmlFor="gallery" className="block text-sm mb-1">
+                    Gallery Name
+                  </label>
                   <select
                     id="gallery"
                     name="gallery"
@@ -157,11 +173,10 @@ const Finalsubmission = () => {
               </div>
             </div>
 
-            {/* Right Column */}
             <div className="flex-1">
               <h3 className="text-lg font-medium mb-4">Upload Content File</h3>
               <hr className="mb-4 border-gray-600" />
-                   <h1 className='mb-2' >Media File Upload</h1>
+              <h1 className="mb-2">Media File Upload</h1>
               <div className="relative border-2   border-gray-600 rounded-md h-64 flex flex-col items-center justify-center text-center p-4 bg-[#2a2b30]">
                 <FiUploadCloud className="text-3xl text-gray-400 mb-2" />
                 <p className="text-sm text-gray-400 mb-2">
@@ -181,7 +196,6 @@ const Finalsubmission = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <div className="flex justify-end mt-8">
             <button
               type="submit"

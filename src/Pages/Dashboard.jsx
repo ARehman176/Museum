@@ -1,5 +1,5 @@
 import React from "react";
-import { FiHome, FiUsers, FiCreditCard,  } from "react-icons/fi";
+import { FiHome, FiUsers, FiCreditCard,FiSearch,FiBell,FiSettings } from "react-icons/fi";
 import logo from '../assets/logo.png'
 import screenshoot from '../assets/screenshoot.png'
 import girl from "../assets/girl.png";
@@ -76,7 +76,7 @@ const Dashboard = () => {
           <a href="#" className="flex items-center gap-3 hover:text-white">
             <FiHome /> Dashboard
           </a>
-          <a href="#" className="flex items-center gap-3 text-[#454545]">
+          <a href="/User" className="flex items-center gap-3 text-[#454545]">
             <FiUsers /> Users
           </a>
           <a href="#" className="flex items-center gap-3 text-[#454545]">
@@ -86,7 +86,7 @@ const Dashboard = () => {
       </div>
 
       {/* Main Content */}
-      <div className="ml-20 flex flex-col p-6 bg-[#121418s]">
+      <div className=" flex flex-col p-6 bg-[#121418s]">
         {/* Header */}
         <div className="bg-[#191B20] rounded-lg p-6 flex items-center justify-between ">
           <div>
@@ -107,7 +107,18 @@ const Dashboard = () => {
        
          <div className="w-4xl p-8 -ml-8 ">
       
- <h2 className="text-2xl font-bold mt-6 mb-4">Admin Dashboard</h2>
+  <div className="flex items-center justify-between mt-6 mb-4">
+ 
+      <div className="flex items-center gap-3">
+        <h2 className="text-2xl font-bold">Admin Dashboard</h2>
+
+        {/* Two icons side by side */}
+        <div className="flex items-center  gap-2 ml-140 text-gray-600 cursor-pointer">
+          <FiSettings className="text-xl hover:text-gray-400 transition" />
+          <FiBell className="text-xl hover:text-gray-400 transition" />
+        </div>
+      </div>
+    </div>
           <div className="overflow-x-auto ">
             <table className="w-full border-collapse text-left text-sm">
               <thead className=" text-gray-300">
@@ -151,8 +162,25 @@ const Dashboard = () => {
 
       {/* Right Sidebar */}
       <div className="w-80 bg-[#111] p-6 flex flex-col gap-6">
+        <div className="flex items-center gap-4  p-4">
+      {/* Search Input */}
+      <div className="flex items-center bg-[#1e1e1e] px-3 py-2 rounded-md w-64">
+        <FiSearch className="text-gray-400 mr-2" />
+        <input
+          type="text"
+          placeholder="Search"
+          className="bg-transparent outline-none text-sm text-white w-full placeholder-gray-400"
+        />
+      </div>
+
+      {/* Notification Bell */}
+      <div className="relative bg-[#1e1e1e] p-2 rounded-md cursor-pointer">
+        <FiBell className="text-gray-300 text-lg" />
+        <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+      </div>
+    </div>
         {/* User Card */}
-        <div className="bg-[#1a1a1a] p-6 rounded-lg flex flex-col items-center text-center mt-10">
+        <div className="bg-[#1a1a1a] p-6 rounded-lg flex flex-col items-center text-center ">
           <img
             src={user}
             alt="User"
@@ -165,7 +193,7 @@ const Dashboard = () => {
 
         {/* Ad Card */}
        <div>
-        <img src={lawn} alt="" className="w-60 h-80 mt-8" />
+        <img src={lawn} alt="" className="w-67 h-70 mt-8 ml-1" />
        </div>
       </div>
     </div>

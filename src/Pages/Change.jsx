@@ -14,7 +14,6 @@ const Change = () => {
     newOtp[index] = element.value;
     setOtp(newOtp);
 
-    // Move to next input
     if (element.value !== "" && index < 5) {
       inputRefs.current[index + 1].focus();
     }
@@ -28,9 +27,7 @@ const Change = () => {
 
   return (
     <div>
-      {/* Navbar */}
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
-        {/* Top Right Menu */}
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3">
           <button className="flex items-center gap-1 hover:text-yellow-400">
             <FiSearch className="text-base sm:text-lg" /> Search
@@ -43,14 +40,11 @@ const Change = () => {
           </a>
         </div>
 
-        {/* Bottom Row */}
         <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-4 sm:gap-0 mb-2">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="w-16 sm:w-20" />
           </div>
 
-          {/* Links */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
             <a href="/" className="hover:text-yellow-400">
               Home
@@ -74,9 +68,7 @@ const Change = () => {
         </div>
       </nav>
 
-      {/* Main Layout */}
       <div className="min-h-screen bg-[#121418] text-white flex">
-        {/* Sidebar */}
         <aside className="w-64 bg-[#121418] p-6 ml-60 mt-10">
           <nav className="space-y-6">
             <Link to="/Profile">
@@ -93,7 +85,6 @@ const Change = () => {
           </nav>
         </aside>
 
-        {/* Content */}
         <div>
           <h1 className="text-3xl font-bold mb-6 ml-20 mt-16">My Account</h1>
 
@@ -107,7 +98,6 @@ const Change = () => {
             </p>
           </div>
 
-          {/* OTP Input */}
           <div className="flex flex-col items-start space-y-2 ml-20">
             <label className="text-sm font-medium text-gray-200">
               OTP Verified <span className="text-red-500">*</span>
@@ -129,7 +119,6 @@ const Change = () => {
             </div>
           </div>
 
-          {/* Save Button */}
           <Link to="/Account">
             <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded hover:bg-gray-400 ml-65 mt-8">
               Save Changes

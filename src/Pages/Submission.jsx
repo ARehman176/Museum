@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiSearch, FiUpload } from "react-icons/fi";
-import logo from "../assets/logo.png"; 
+import logo from "../assets/logo.png";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 
@@ -28,7 +28,6 @@ const Submission = () => {
 
   return (
     <div className="bg-[#121418] min-h-screen text-white">
-      {/* Navbar */}
       <nav className="bg-black text-white px-4 sm:px-6 py-3">
         <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm font-medium mb-3">
           <button className="flex items-center gap-1 hover:text-yellow-400">
@@ -48,25 +47,37 @@ const Submission = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium mt-2 sm:mt-1">
-            <a href="/" className="hover:text-yellow-400">Home</a>
-            <a href="/galleries" className="hover:text-yellow-400">Galleries</a>
-            <a href="/documentaries" className="hover:text-yellow-400">Documentaries</a>
-            <a href="#" className="hover:text-yellow-400">Membership</a>
-            <a href="#" className="hover:text-yellow-400">Blog</a>
-            <a href="#" className="hover:text-yellow-400">Support us</a>
+            <a href="/" className="hover:text-yellow-400">
+              Home
+            </a>
+            <a href="/galleries" className="hover:text-yellow-400">
+              Galleries
+            </a>
+            <a href="/documentaries" className="hover:text-yellow-400">
+              Documentaries
+            </a>
+            <a href="#" className="hover:text-yellow-400">
+              Membership
+            </a>
+            <a href="#" className="hover:text-yellow-400">
+              Blog
+            </a>
+            <a href="#" className="hover:text-yellow-400">
+              Support us
+            </a>
           </div>
         </div>
       </nav>
 
-      {/* Form Section */}
       <div className="flex items-center bg-[#121418] justify-center p-6 sm:p-12">
         <div className="w-full max-w-6xl  p-8 rounded-lg ">
           <h2 className="text-2xl font-semibold mb-6">Content Submission</h2>
 
           <div className="flex flex-col md:flex-row md:space-x-8">
-            {/* Submitter Information */}
             <div className="flex-1 mb-8 md:mb-0">
-              <h3 className="text-lg font-medium mb-4">Submitter Information</h3>
+              <h3 className="text-lg font-medium mb-4">
+                Submitter Information
+              </h3>
               <hr className="mb-4 text-[#454545]" />
 
               <div className="space-y-4">
@@ -77,7 +88,12 @@ const Submission = () => {
                   { label: "Entity Name", name: "entity", type: "text" },
                 ].map((field) => (
                   <div key={field.name}>
-                    <label htmlFor={field.name} className="block text-sm font-medium mb-1">{field.label}</label>
+                    <label
+                      htmlFor={field.name}
+                      className="block text-sm font-medium mb-1"
+                    >
+                      {field.label}
+                    </label>
                     <input
                       type={field.type}
                       id={field.name}
@@ -115,7 +131,6 @@ const Submission = () => {
               </div>
             </div>
 
-            {/* Submitter Address */}
             <div className="flex-1">
               <h3 className="text-lg font-medium mb-4">Submitter Address</h3>
               <hr className="mb-4 text-[#454545]" />
@@ -128,7 +143,12 @@ const Submission = () => {
                   { label: "Zip Code", name: "zip" },
                 ].map((field) => (
                   <div key={field.name}>
-                    <label htmlFor={field.name} className="block text-sm font-medium mb-1">{field.label}</label>
+                    <label
+                      htmlFor={field.name}
+                      className="block text-sm font-medium mb-1"
+                    >
+                      {field.label}
+                    </label>
                     <input
                       type="text"
                       id={field.name}
@@ -141,7 +161,12 @@ const Submission = () => {
                 ))}
 
                 <div>
-                  <label htmlFor="country" className="block text-sm font-medium mb-1">Country</label>
+                  <label
+                    htmlFor="country"
+                    className="block text-sm font-medium mb-1"
+                  >
+                    Country
+                  </label>
                   <select
                     id="country"
                     name="country"
@@ -159,13 +184,13 @@ const Submission = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
-         <Link to="/Finalsubmission">
-          <div className="flex justify-end mt-8">
-            <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded hover:bg-gray-400 transition">
-              Next
-            </button>
-          </div></Link>
+          <Link to="/Finalsubmission">
+            <div className="flex justify-end mt-8">
+              <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded hover:bg-gray-400 transition">
+                Next
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
       <Footer />
@@ -174,4 +199,3 @@ const Submission = () => {
 };
 
 export default Submission;
-

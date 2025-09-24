@@ -35,6 +35,10 @@ import Finalsubmission from "./Pages/Finalsubmission";
 import Supportus from "./Pages/Supportus";
 import Membership from "./Pages/Membership";
 import Dashboard from "./Pages/Dashboard";
+import User from "./Pages/User";
+import Userinfo from "./Pages/Userinfo";
+import Subscribe from "./Pages/Subscribe";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -61,7 +65,10 @@ function App() {
           <Route path="/Finalsubmission" element={<Finalsubmission />} />
           <Route path="/Supportus" element={<Supportus />} />
           <Route path="/Membership" element={<Membership />} />
-           <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/User" element={<User />} />
+          <Route path="/Userinfo" element={<Userinfo />} />
+          <Route path="/Subscribe" element={<Subscribe />} />
         </Routes>
       </BrowserRouter>
     </>
