@@ -6,15 +6,7 @@ import {
   RouterProvider,
   Routes,
 } from "react-router-dom";
-import Navbar from "./Components/Navbar";
 
-import Gardening from "./Components/Gardening";
-import Gallery from "./Components/Gallery";
-import Support from "./Components/Support";
-import Museum from "./Components/Museum";
-import News from "./Components/News";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
 import Home from "./Pages/Home";
 import Galliries from "./Pages/Galliries";
 import Documentaries from "./Pages/Documentaries";
@@ -38,6 +30,7 @@ import Dashboard from "./Pages/Dashboard";
 import User from "./Pages/User";
 import Userinfo from "./Pages/Userinfo";
 import Subscribe from "./Pages/Subscribe";
+import Editsubscribe from "./Pages/Editsubscribe";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -69,6 +62,7 @@ function App() {
           <Route path="/User" element={<User />} />
           <Route path="/Userinfo" element={<Userinfo />} />
           <Route path="/Subscribe" element={<Subscribe />} />
+          <Route path="/Editsubscribe" element={<Editsubscribe />} />
         </Routes>
       </BrowserRouter>
     </>

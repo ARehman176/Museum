@@ -10,7 +10,7 @@ import logo from "../assets/logo.png";
 import user from "../assets/user.png";
 import lawn from "../assets/lawn.png";
 import { FiEdit2 } from "react-icons/fi";
-import { FaCheck, FaTimes } from "react-icons/fa";
+import { FaCheck, FaTimes } from "react-icons/fa"; 
 
 const Subscribe = () => {
   return (
@@ -30,7 +30,7 @@ const Subscribe = () => {
             <FiUsers /> Users
           </a>
           <a
-            href="/Subscribe"
+            href="/Editsubscribe"
             className="flex items-center gap-3 hover:text-white"
           >
             <FiCreditCard /> Subscription

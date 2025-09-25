@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="border-gray-700 mb-4 max-w-6xl ml-30" />
+      <hr className=" mb-4 max-w-6xl ml-30" />
 
       <div className="flex flex-col md:flex-row justify-around gap-155 items-center text-sm text-gray-400">
         <img src={logo} alt="Logo" className="h-10 mb-4 md:mb-0" />

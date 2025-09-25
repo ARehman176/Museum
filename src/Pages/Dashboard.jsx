@@ -99,7 +99,7 @@ const Dashboard = () => {
           </div>
          
           <div>
-            <img src={screenshoot} alt="" className="w-60" />
+            <img src={screenshoot}  className="w-60" />
           </div>
         </div>
 
@@ -110,7 +110,7 @@ const Dashboard = () => {
   <div className="flex items-center justify-between mt-6 mb-4">
  
       <div className="flex items-center gap-3">
-        <h2 className="text-2xl font-bold">Admin Dashboard</h2>
+        <h2 className="text-2xl font-bold ml-2">Admin Dashboard</h2>
 
         {/* Two icons side by side */}
         <div className="flex items-center  gap-2 ml-140 text-gray-600 cursor-pointer">
